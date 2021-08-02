@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/src/app/pages/tasks-list/settings.less">
+  <title>Productivity app</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div id="menu-header" class="menu-header">
+        <div class="menu-header__logo-part">
+          <p class="logo"></p>
+          <img hidden class="logo2" src="../images/logo2.png" alt="do">
+        </div>
+        <div class="menu-header__menu-part">
+          <a href="#"><img src="../images/Global_List.svg" class="menu-icons" alt="do"></a>
+          <a href="#"><img src="../images/stat.svg" class="menu-icons" alt="do"></a>
+          <a href="#"><img src="../images/settings.svg" class="menu-icons" alt="do"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="timer-task">
+        <div class="timer-task__name">
+          <h2>1. Creating a New Design</h2>
+        </div>
+        <div class="timer-task__description">
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+        </div>
+        <div class="timer-task__pomodoros">
+          <img src="/images/tomato-task.svg" alt="">
+          <img src="/images/tomato-task.svg" alt="">
+          <img src="/images/tomato-task.svg" alt="">
+          <img class="timer-task__pomodoros--add-img" src="/images/add.svg" alt="">
+        </div>
+      </div>
+      <div class="timer-block">
+        <div class="statistic-back">
+          <img src="/images/back.png" alt="do">
+        </div>
+        <div class="timer-item">
+          <div class="timer-item__inner">
+            <div class="clock-canvas"></div>
+            <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+            <div class="text">
+              <p class="val">Let’s do it!</p>
+            </div>
+          </div>
+        </div>
+        <div class="statistic-back">
+          <img src="/images/back.png" class="none" alt="do">
+        </div>
+      </div>
+      <div class="button-navigation navigation-start">
+        <button class="start-task">Start</button>
+      </div>
+      <div class="buttons-navigation navigation-timer">
+        <button class="fail-pomodora">Fail Pomodora</button>
+        <button class="finish-pomodora">Finish Pomodora</button>
+      </div>
+      <div class="buttons-navigation navigation-timer">
+        <button class="start-pomodora">Start Pomodora</button>
+        <button class="finish-task">Finish Task</button>
+      </div>
+    </div>
+  </main>
+  <script src="/bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </script>
+</body>
+
+</html>

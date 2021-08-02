@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/src/app/pages/tasks-list/settings.less">
+    <title>Productivity app</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div id="menu-header" class="menu-header">
+                <div class="menu-header__logo-part">
+                    <p class="logo logo-settings">Settings</p>
+                    <img hidden class="logo2" src="../images/logo2.png" alt="do">
+                </div>
+                <div class="menu-header__menu-part">
+                    <a href="#"><img src="../images/Global_List.svg" class="menu-icons" alt="do"></a>
+                    <a href="#"><img src="../images/stat.svg" class="menu-icons" alt="do"></a>
+                    <a href="#"><img src="../images/settings.svg" class="menu-icons" alt="do"></a>
+                </div>
+            </div>
+            <div class="menu-second">
+                <p class="logo2">Settings</p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="navigation">
+                <a href="#" id="to-do-tasks" onclick="return thePromodos();" class="to-do-tasks">Pomodoros</a>
+                <span> | </span>
+                <a href="#" onclick="return theSettings();" class="done-tasks">Categories</a>
+            </div>
+            <div class="navigation-info">
+                <div class="pomodoros-categories">
+                    <p class="header-pomodoros">Categories list overview</p>
+                    <div class="pomodoros-categories__points">
+                        <div class="points-work">
+                            <div class="text-ponts-info first-ponts-info">
+                                <p class="text-points">Work</p>
+                            </div>
+                        </div>
+                        <div class="points-work">
+                            <div class="text-ponts-info second-ponts-info">
+                                <p class="text-points">Education</p>
+                            </div>
+                        </div>
+                        <div class="points-work">
+                            <div class="text-ponts-info third-ponts-info">
+                                <p class="text-points">Hobby</p>
+                            </div>
+                        </div>
+                        <div class="points-work">
+                            <div class="text-ponts-info fourth-ponts-info">
+                                <p class="text-points">Sport</p>
+                            </div>
+                        </div>
+                        <div class="points-work">
+                            <div class="text-ponts-info fifth-ponts-info">
+                                <p class="text-points">Other</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-navigation">
+                    <button class="go-tasks-button">Go to Tasks</button>
+                </div>
+            </div>
+
+
+            <div class="settings">
+                <div class="pomodoros-settings">
+                    <p class="header-pomodoros">Pomodoros settings</p>
+                    <div class="pomodoros-settings__points">
+                        <div class="points-work">
+                            <div class="points-work__first" id="points-work__first">
+                                <div class="text-ponts-info first-ponts-info">
+                                    <p class="text-points">WORK TIME</p>
+                                </div>
+                                <div id="voter">
+                                    <div class="tab-add voter">
+                                        <span class="down btn">—</span>
+                                        <span class="vote vote1" id="vote1">15</span>
+                                        <span class="up btn">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="points-work__second">
+                                <p>Please select a value between 15 and 25 <span>minutes</span></p>
+                            </div>
+                        </div>
+                        <div class="points-work">
+                            <div class="points-work__first">
+                                <div class="text-ponts-info second-ponts-info">
+                                    <p class="text-points">WORK ITERATION</p>
+                                </div>
+                                <div id="voter2">
+                                    <div class="tab-add voter">
+                                        <span class="down btn">—</span>
+                                        <span class="vote vote2" id="vote2">2</span>
+                                        <span class="up btn">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="points-work__second">
+                                <p>Please select a value between 2 and 5 <span>iterations</span></p>
+                            </div>
+                        </div>
+                        <div class="points-work">
+                            <div class="points-work__first">
+                                <div class="text-ponts-info third-ponts-info">
+                                    <p class="text-points">SHORT BREAK</p>
+                                </div>
+                                <div id="voter3">
+                                    <div class="tab-add voter">
+                                        <span class="down btn">—</span>
+                                        <span class="vote vote3" id="vote3">3</span>
+                                        <span class="up btn">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="points-work__second">
+                                <p>Please select a value between 3 and 5 <span>minutes</span></p>
+                            </div>
+                        </div>
+                        <div class="points-work">
+                            <div class="points-work__first">
+                                <div class="text-ponts-info fourth-ponts-info">
+                                    <p class="text-points">LONG BREAK</p>
+                                </div>
+                                <div id="voter4">
+                                    <div class="tab-add voter">
+                                        <span class="down btn">—</span>
+                                        <span class="vote vote4" id="vote4">15</span>
+                                        <span class="up btn">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="points-work__second">
+                                <p>Please select a value between 15 and 30 <span>minutes</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="your-cycle" id="your-cycle">
+                        <p class="cycle-header">Your cycle</p>
+                        <div class="bar-holder"><div class="bar" id="bar"></div></div>
+                    </div>
+                    <div class="buttons-navigation">
+                        <button class="go-tasks-button">Go to Tasks</button>
+                        <button class="save-tasks-button">Save</button>
+                    </div>
+                </div>
+    </main>
+    <script src="/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        function thePromodos() {
+            const $block1 = $('.settings');
+            const $block2 = $('.navigation-info');
+            $block1.show();
+            $block2.hide();
+        }
+        function theSettings() {
+            const $block1 = $('.navigation-info');
+            const $block2 = $('.settings');
+            $block1.show();
+            $block2.hide();
+        }
+
+    </script>
+</body>
+
+</html>

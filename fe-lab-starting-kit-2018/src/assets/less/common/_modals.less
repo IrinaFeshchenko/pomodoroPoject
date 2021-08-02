@@ -1,0 +1,186 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  padding-top: 4.5em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: @background-color;
+  margin: auto;
+  padding: @subtitle-laptop;
+  border: 1px solid @background-color;
+  width: 90%;
+  .modal-form {
+    padding-top: 4.625em;
+    padding-bottom: 10.875em;
+    margin-bottom: -150px;
+    h2 {
+      text-align: center;
+      font-family: Roboto;
+    }
+    .modal-form--text {
+      font-size: @para-desc;
+      line-height: @subtitle-laptop;
+      font-weight: 400;
+      padding-bottom: 0.75em;
+    }
+    .input-modal {
+      color: @navigarion-ref;
+      background-color: @background-color;
+      border: none;
+      font-size: @subtitle-laptop;
+      line-height: @heading3-mobile;
+      font-weight: 400;
+      padding-bottom: 0.75em;
+    }
+    .modal-form--border {
+      border-bottom: 1px solid #425869;
+    }
+  }
+}
+
+/* The Close Button */
+.close,
+.add {
+  color: #aaaaaa;
+  float: right;
+  font-size: @heading1-desc;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: @black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-form__category--radio-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.75em;
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-radio:not(:disabled):not(:checked) + label::before {
+    background-color: @navigarion-ref;
+    border: none;
+  }
+  .custom-radio-first:not(:disabled):not(:checked) + label:hover::before {
+    background-color: @selective_yellow;
+  }
+  .custom-radio-second:not(:disabled):not(:checked) + label:hover::before {
+    background-color: @malibu;
+  }
+  .custom-radio-third:not(:disabled):not(:checked) + label:hover::before {
+    background-color: @amethyst;
+  }
+  .custom-radio-fourth:not(:disabled):not(:checked) + label:hover::before {
+    background-color: @terracotta;
+  }
+  .custom-radio-fifth:not(:disabled):not(:checked) + label:hover::before {
+    background-color: @dark_turquoise;
+  }
+  .custom-radio + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-radio + label::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .custom-radio:not(:disabled):not(:checked) + label::before {
+    border-color: @black;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked) + label:hover::before {
+    border-color: @tangerine;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active + label::before {
+    background-color: @selective_yellow;
+    border-color: @tangerine;
+  }
+  /* стили для радиокнопки, находящейся в фокусе */
+  .custom-radio:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(255, 220, 67, 0.25);
+  }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked) + label::before {
+    border-color: @tangerine;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+
+  .custom-radio-first:checked + label::before {
+    .checked-radio(@black,@selective_yellow,@checked-radio1);
+  }
+  .custom-radio-second:checked + label::before {
+    .checked-radio(@black,@malibu,@checked-radio2);
+  }
+  .custom-radio-third:checked + label::before {
+    .checked-radio(@black,@amethyst,@checked-radio3);
+  }
+  .custom-radio-fourth:checked + label::before {
+    .checked-radio(@black,@terracotta,@checked-radio4);
+  }
+  .custom-radio-fifth:checked + label::before {
+    .checked-radio(@black,@dark_turquoise,@checked-radio5);
+  }
+  .custom-radio:disabled + label::before {
+    background-color: @selective_yellow;
+  }
+}
+
+.delete-modal--text {
+  margin-top: 316px;
+  margin-bottom: 32.75em;
+  font-size: @msg-desc;
+  line-height: 3em;
+  text-align: center;
+  color: #8da5b8;
+}
+
+.buttons-navigation {
+  button {
+    width: 49%;
+    height: 4.5em;
+    font-size: @heading3-mobile;
+    line-height: @heading3-mobile;
+    font-weight: 700;
+    color: @white;
+    border: none;
+  }
+  .go-cancel {
+    background-color: @malibu;
+  }
+  .go-cancel:hover {
+    background-color: @curious_blue;
+  }
+  .go-remove {
+    background-color: @tomato;
+  }
+  .go-remove:hover {
+    background-color: @dark_coral;
+  }
+}

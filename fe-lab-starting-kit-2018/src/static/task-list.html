@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Productivity app</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div id="menu-header" class="menu-header">
+        <div class="menu-header__logo-part">
+          <p class="logo">Daily Task List</p>
+          <img hidden class="logo2" src="../images/logo2.png" alt="do">
+          <img id="addBtnModal" src="../images/add.svg" alt="do">
+        </div>
+        <div class="menu-header__menu-part">
+          <a href="#"><img src="../images/trashbox.svg" class="menu-icons" alt="do" width="24px"></a>
+          <a href="#"><img src="../images/Global_List.svg" class="menu-icons" alt="do"></a>
+          <a href="#"><img src="../images/stat.svg" class="menu-icons" alt="do"></a>
+          <a href="#"><img src="../images/settings.svg" class="menu-icons" alt="do"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main" id="main">
+    <div class="container">
+      <div class="first-time-page">
+        <div class="first-time-page__info">
+          <img src="/images/Pomodoro.png" alt="first-time-logo" class="first-time-page__info--image">
+          <h1 class="move-task--text">As you visited our site for a first time you can check and customize your default
+            application settings</h1>
+        </div>
+        <div class="first-time-page__navigation">
+          <div class="buttons-navigation">
+            <button class="go-tasks-button">Go to Tasks</button>
+            <button class="save-tasks-button">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="main__list">
+        <div class="navigation">
+          <a href="#" id="to-do-tasks" onclick="return theFunction();" class="to-do-tasks">To Do</a>
+          <span> | </span>
+          <a href="#" class="done-tasks">Done</a>
+        </div>
+        <div class="move-task">
+          <h1 class="move-task--text">Task added, move it to the top 5 in daily task list</h1>
+          <img class="move-task--img" src="/images/upload.svg" alt="">
+        </div>
+        <div class="list">
+          <div class="box first__box">
+            <div class="list__box">
+              <div class="box-date">
+                <p>TODAY</p>
+              </div>
+              <div class="box-info">
+                <h3>Lorem ipsum sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+              </div>
+              <div class="box-change">
+                <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                <a id="deleteModal" href="#"><img src="../images/trashbox.svg" alt="do"></a>
+              </div>
+            </div>
+            <div class="tomato__level">
+              <div class="box-tomato">
+                <a href="#"><img src="../images/white.png" alt="do"></a>
+              </div>
+              <p><span>3</span></p>
+            </div>
+          </div>
+          <div class="box  second__box">
+            <div class="list__box">
+              <div class="box-date">
+                <p>TODAY</p>
+              </div>
+              <div class="box-info">
+                <h3>Lorem ipsum sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+              </div>
+              <div class="box-change">
+                <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+              </div>
+            </div>
+            <div class="tomato__level">
+              <div class="box-tomato">
+                <a href="#"><img src="../images/white.png" alt="do"></a>
+              </div>
+              <p><span>3</span></p>
+            </div>
+          </div>
+          <div class="box third__box">
+            <div class="list__box">
+              <div class="box-date">
+                <p>TODAY</p>
+              </div>
+              <div class="box-info">
+                <h3>Lorem ipsum sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+              </div>
+              <div class="box-change">
+                <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+              </div>
+            </div>
+            <div class="tomato__level">
+              <div class="box-tomato">
+                <a href="#"><img src="../images/white.png" alt="do"></a>
+              </div>
+              <p><span>3</span></p>
+            </div>
+          </div>
+          <div class="box  fourth__box">
+            <div class="list__box">
+              <div class="box-date">
+                <p>TODAY</p>
+              </div>
+              <div class="box-info">
+                <h3>Lorem ipsum sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+              </div>
+              <div class="box-change">
+                <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+              </div>
+            </div>
+            <div class="tomato__level">
+              <div class="box-tomato">
+                <a href="#"><img src="../images/white.png" alt="do"></a>
+              </div>
+              <p><span>3</span></p>
+            </div>
+          </div>
+          <div class="box  fifth__box">
+            <div class="list__box">
+              <div class="box-date">
+                <p>TODAY</p>
+              </div>
+              <div class="box-info">
+                <h3>Lorem ipsum sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+              </div>
+              <div class="box-change">
+                <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+              </div>
+            </div>
+            <div class="tomato__level">
+              <div class="box-tomato">
+                <a href="#"><img src="../images/white.png" alt="do"></a>
+              </div>
+              <p><span>3</span></p>
+            </div>
+          </div>
+          <div class="box  sixth__box">
+            <div class="list__box">
+              <div class="box-date">
+                <p>TODAY</p>
+              </div>
+              <div class="box-info">
+                <h3>Lorem ipsum sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+              </div>
+              <div class="box-change">
+                <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+              </div>
+            </div>
+            <div class="tomato__level">
+              <div class="box-tomato">
+                <a href="#"><img src="../images/white.png" alt="do"></a>
+              </div>
+              <p><span>3</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main__global-list">
+        <div class="global">
+          <p>Global List</p>
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="icon" fill-rule="evenodd" clip-rule="evenodd"
+              d="M2.87549 0.75L0.25 3.39299L3.8689 7.036L0.294556 10.6342L2.89283 13.2497L8.95547 7.14671L8.8628 7.05342L9 6.9153L2.87549 0.75Z"
+              fill="#8DA5B8" />
+          </svg>
+        </div>
+        <div class="global__menu">
+          <p>All</p>
+          <span>|</span>
+          <p>Urgent</p>
+          <span>|</span>
+          <p>High</p>
+          <span>|</span>
+          <p>Middle</p>
+          <span>|</span>
+          <p>Low</p>
+        </div>
+      </div>
+
+      <div class="work-list">
+        <div class="ping_about">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+              fill="#FFB202" />
+            <path
+              d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z"
+              fill="#2A3F50" />
+            <path
+              d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+              fill="#FFB202" />
+          </svg>
+          <p>WORK</p>
+        </div>
+        <div class="list">
+          <div class="box first__box">
+            <div class="list__box">
+              <div class="box-date">
+                <p class="red-date">23 MAY</p>
+              </div>
+              <div class="box-info">
+                <h3>Lorem ipsum sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+              </div>
+              <div class="box-change">
+                <a href="#"><img src="../images/arrow.svg" alt="do"></a>
+                <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+              </div>
+            </div>
+            <div class="tomato__level">
+              <div class="box-tomato">
+                <a href="#"><img src="../images/white.png" alt="do"></a>
+              </div>
+              <p><span>3</span></p>
+            </div>
+          </div>
+          <div class="box  second__box">
+            <div class="list__box">
+              <div class="box-date">
+                <p class="red-date">23 MAY</p>
+              </div>
+              <div class="box-info">
+                <h3>Lorem ipsum sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+              </div>
+              <div class="box-change">
+                <a href="#"><img src="../images/arrow.svg" alt="do"></a>
+                <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+              </div>
+            </div>
+            <div class="tomato__level">
+              <div class="box-tomato">
+                <a href="#"><img src="../images/white.png" alt="do"></a>
+              </div>
+              <p><span>3</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="education-list">
+          <div class="ping_about">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                fill="#FFB202" />
+              <path
+                d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z"
+                fill="#2A3F50" />
+              <path
+                d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                fill="#FFB202" />
+            </svg>
+            <p>EDUCATION</p>
+          </div>
+          <div class="list">
+            <div class="box first__box">
+              <div class="list__box">
+                <div class="box-date">
+                  <p class="red-date">23 <span>MAY</span></p>
+                </div>
+                <div class="box-info">
+                  <h3>Lorem ipsum sit amet</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  </p>
+                </div>
+                <div class="box-change">
+                  <a href="#"><img src="../images/arrow.svg" alt="do"></a>
+                  <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                  <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+                </div>
+              </div>
+              <div class="tomato__level">
+                <div class="box-tomato">
+                  <a href="#"><img src="../images/white.png" alt="do"></a>
+                </div>
+                <p><span>3</span></p>
+              </div>
+            </div>
+            <div class="box  second__box">
+              <div class="list__box">
+                <div class="box-date">
+                  <p class="red-date">23 <span>MAY</span></p>
+                </div>
+                <div class="box-info">
+                  <h3>Lorem ipsum sit amet</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  </p>
+                </div>
+                <div class="box-change">
+                  <a href="#"><img src="../images/arrow.svg" alt="do"></a>
+                  <a href="#"><img src="../images/edit.svg" alt="do"></a>
+                  <a href="#"><img src="../images/trashbox.svg" alt="do"></a>
+                </div>
+              </div>
+              <div class="tomato__level">
+                <div class="box-tomato">
+                  <a href="#"><img src="../images/white.png" alt="do"></a>
+                </div>
+                <p><span>3</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Notification content -->
+
+    <div class="notification-tabs">
+      <div class="container">
+        <div class="notification-info notification-block">
+          <div class="notification-info-image">
+            <img src="/images/success-notification.png" alt="">
+          </div>
+          <div class="notification-info-text">
+            <p>This is just an info notification message!</p>
+          </div>
+          <div class="notification-info-cancel">
+            <img src="/images/close-modal2.svg" alt="">
+          </div>
+        </div>
+        <div class="notification-error notification-block">
+          <div class="notification-info-image">
+            <img src="/images/error-notification.png" alt="">
+          </div>
+          <div class="notification-info-text">
+            <p>Oops! An error has occured.</p>
+          </div>
+          <div class="notification-info-cancel">
+            <img src="/images/close-modal2.svg" alt="">
+          </div>
+        </div>
+        <div class="notification-success notification-block">
+          <div class="notification-info-image">
+            <img src="/images/success-notification.png" alt="">
+          </div>
+          <div class="notification-info-text">
+            <p>Task was successfully created.</p>
+          </div>
+          <div class="notification-info-cancel">
+            <img src="/images/close-modal2.svg" alt="">
+          </div>
+        </div>
+        <div class="notification-warning notification-block">
+          <div class="notification-info-image">
+            <img src="/images/warning-notification.png" alt="">
+          </div>
+          <div class="notification-info-text">
+            <p>This is just a warning message.</p>
+          </div>
+          <div class="notification-info-cancel">
+            <img src="/images/close-modal2.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal content -->
+    <!-- Modal add -->
+    <div id="myModal-add" class="modal">
+      <div class="modal-content">
+        <span class="close"><img src="/images/close-modal.svg" alt=""></span>
+        <span class="add"><img src="/images/add-modal.svg" alt=""></span>
+        <div class="modal-form">
+          <h2>Add Task</h2>
+          <div class="container">
+            <div class="modal-form__title modal-form--border">
+              <p class="modal-form__title--text">TITLE</p>
+              <input class="input-modal" placeholder="Add title here" type="text">
+            </div>
+            <div class="modal-form__description modal-form--border">
+              <p class="modal-form--text">DESCRIPTION</p>
+              <input class="input-modal" placeholder="Add description here" type="text">
+            </div>
+            <div class="modal-form__category modal-form--border">
+              <p class="modal-form--text">CATEGORY</p>
+              <div class="modal-form__category--radio-list">
+                <input type="radio" class="custom-radio custom-radio-first" id="happy">
+                <label for="happy">Work</label>
+                <input type="radio" id="happy1" class="custom-radio custom-radio-second">
+                <label for="happy1">Education</label>
+                <input type="radio" id="happy2" class="custom-radio custom-radio-third">
+                <label for="happy2">Hobby</label>
+                <input type="radio" id="happy3" class="custom-radio custom-radio-fourth">
+                <label for="happy3">Sport</label>
+                <input type="radio" id="happy4" class="custom-radio custom-radio-fifth">
+                <label for="happy4">Other</label>
+              </div>
+            </div>
+            <div class="modal-form__deadline modal-form--border">
+              <p class="modal-form--text">DEADLINE</p>
+              <input type="datetime" class="input-modal" placeholder="May 23, 2021">
+            </div>
+            <div class="modal-form__estimation modal-form--border">
+              <p class="modal-form--text">ESTIMATION</p>
+              <div class="modal-form__estimation--radio-list">
+                <img src="/images/estimation-checked.png" alt="" class="checked-estimation estimation">
+                <img src="/images/estimation-checked.png" alt="" class="checked-estimation estimation">
+                <img src="/images/estimation-checked.png" alt="" class="checked-estimation estimation">
+                <img src="/images/estimation-notchecked.png" alt="" class="checked-estimation estimation">
+                <img src="/images/estimation-notchecked.png" alt="" class="checked-estimation estimation">
+              </div>
+            </div>
+            <div class="modal-form__priority modal-form--border">
+              <p class="modal-form--text">PRIORITY</p>
+              <div class="modal-form__category--radio-list">
+                <input type="radio" class="custom-radio custom-radio-fourth" id="happy5">
+                <label for="happy5">Urgent</label>
+                <input type="radio" id="happy6" class="custom-radio custom-radio-second">
+                <label for="happy6">High</label>
+                <input type="radio" id="happy7" class="custom-radio custom-radio-first">
+                <label for="happy7">Middle</label>
+                <input type="radio" id="happy8" class="custom-radio custom-radio-third">
+                <label for="happy8">Low</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="myModal-edit" class="modal">
+      <div class="modal-content">
+        <span class="close"><img src="/images/close-modal.svg" alt=""></span>
+        <span class="add"><img src="/images/add-modal.svg" alt=""></span>
+        <div class="modal-form">
+          <h2>Edit Task</h2>
+          <div class="container">
+            <div class="modal-form__title modal-form--border">
+              <p class="modal-form__title--text">TITLE</p>
+              <input class="input-modal" value="Creating a new design" placeholder="Add title here" type="text">
+            </div>
+            <div class="modal-form__description modal-form--border">
+              <p class="modal-form--text">DESCRIPTION</p>
+              <input class="input-modal" value="Add description here" placeholder="Add description here" type="text">
+            </div>
+            <div class="modal-form__category modal-form--border">
+              <p class="modal-form--text">CATEGORY</p>
+              <div class="modal-form__category--radio-list">
+                <input type="radio" class="custom-radio custom-radio-first" id="happy">
+                <label for="happy">Work</label>
+                <input type="radio" id="happy1" class="custom-radio custom-radio-second">
+                <label for="happy1">Education</label>
+                <input type="radio" id="happy2" class="custom-radio custom-radio-third">
+                <label for="happy2">Hobby</label>
+                <input type="radio" id="happy3" class="custom-radio custom-radio-fourth">
+                <label for="happy3">Sport</label>
+                <input type="radio" id="happy4" class="custom-radio custom-radio-fifth">
+                <label for="happy4">Other</label>
+              </div>
+            </div>
+            <div class="modal-form__deadline modal-form--border">
+              <p class="modal-form--text">DEADLINE</p>
+              <input type="datetime" class="input-modal" placeholder="May 23, 2021">
+            </div>
+            <div class="modal-form__estimation modal-form--border">
+              <p class="modal-form--text">ESTIMATION</p>
+              <div class="modal-form__estimation--radio-list">
+                <img src="/images/estimation-checked.png" alt="" class="checked-estimation estimation">
+                <img src="/images/estimation-checked.png" alt="" class="checked-estimation estimation">
+                <img src="/images/estimation-checked.png" alt="" class="checked-estimation estimation">
+                <img src="/images/estimation-notchecked.png" alt="" class="checked-estimation estimation">
+                <img src="/images/estimation-notchecked.png" alt="" class="checked-estimation estimation">
+              </div>
+            </div>
+            <div class="modal-form__priority modal-form--border">
+              <p class="modal-form--text">PRIORITY</p>
+              <div class="modal-form__category--radio-list">
+                <input type="radio" class="custom-radio custom-radio-fourth" id="happy5">
+                <label for="happy5">Urgent</label>
+                <input type="radio" id="happy6" class="custom-radio custom-radio-second">
+                <label for="happy6">High</label>
+                <input type="radio" id="happy7" class="custom-radio custom-radio-first">
+                <label for="happy7">Middle</label>
+                <input type="radio" id="happy8" class="custom-radio custom-radio-third">
+                <label for="happy8">Low</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="myModal-delete" class="modal">
+      <div class="modal-content">
+        <span class="close close2"><img src="/images/close-modal.svg" alt=""></span>
+        <div class="modal-form">
+          <h2>Remove Task</h2>
+          <div class="container">
+            <p class="delete-modal--text">Are you sure you want to remove selected task(s)?</p>
+          </div>
+          <div class="buttons-navigation">
+            <button class="go-cancel">Cancel</button>
+            <button class="go-remove">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+
+
+    function theFunction() {
+      const $img = $('.main__list .list');
+      $img.show();
+    }
+    var modal = document.getElementById("myModal-add");
+    var modal2 = document.getElementById("myModal-delete");
+    var btn = document.getElementById("addBtnModal");
+    var btn2 = document.getElementById("deleteModal");
+    var span = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close2")[0];
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    btn2.onclick = function () {
+      modal2.style.display = "block";
+    }
+    span2.onclick = function () {
+      modal2.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/src/app/pages/tasks-list/settings.less">
+  <title>Productivity app</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div id="menu-header" class="menu-header">
+        <div class="menu-header__logo-part">
+          <p class="logo logo-settings">Report</p>
+          <img hidden class="logo2" src="../images/logo2.png" alt="do">
+        </div>
+        <div class="menu-header__menu-part">
+          <a href="#"><img src="../images/Global_List.svg" class="menu-icons" alt="do"></a>
+          <a href="#"><img src="../images/stat.svg" class="menu-icons" alt="do"></a>
+          <a href="#"><img src="../images/settings.svg" class="menu-icons" alt="do"></a>
+        </div>
+      </div>
+      <div class="menu-second">
+        <p class="logo2">Report</p>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="navigation2">
+        <a href="#" id="to-do-tasks" onclick="return theDay();" class="to-do-tasks">Day</a>
+        <span> | </span>
+        <a href="#" onclick="return theWeek();" class="done-tasks">Week</a>
+        <span> | </span>
+        <a href="#" onclick="return theMonth();" class="done-tasks">Month</a>
+      </div>
+      <div class="statistic">
+        <div class="statistic-back">
+          <img src="/images/back.png" alt="do">
+        </div>
+        <div class="statistic-block">
+          <div class="statistic-day">
+            <img src="/images/Graph-day.png" alt="do">
+          </div>
+          <div class="statistic-week">
+            <img src="/images/Graph-week.png" alt="do">
+          </div>
+          <div class="statistic-month">
+            <img src="/images/Graph-month.png" alt="do">
+          </div>
+        </div>
+        <div class="statistic-back">
+        </div>
+      </div>
+      <div class="navigation2">
+        <div class="navigation-padding">
+          <a href="#" class="to-do-tasks">Pomodoros</a>
+          <span> | </span>
+          <a href="#" class="done-tasks">Tasks</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+    function theDay() {
+      const $block1 = $('.statistic-week');
+      const $block2 = $('.statistic-month');
+      const $block3 = $('.statistic-day');
+      $block1.hide();
+      $block2.hide();
+      $block3.show();
+    }
+    function theWeek() {
+      const $block1 = $('.statistic-week');
+      const $block2 = $('.statistic-month');
+      const $block3 = $('.statistic-day');
+      $block1.show();
+      $block2.hide();
+      $block3.hide();
+    }
+    function theMonth() {
+      const $block1 = $('.statistic-week');
+      const $block2 = $('.statistic-month');
+      const $block3 = $('.statistic-day');
+      $block1.hide();
+      $block2.show();
+      $block3.hide();
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+@import url(../../../assets/less/main.less);
+
+.daily__list {
+  .navigation {
+    padding-top: 2.5em;
+  }
+}
+.list {
+  padding-top: @heading3-mobile;
+  .box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75em;
+    .list__box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: @white;
+      .box-date {
+        width: 15%;
+        p {
+          color: @color-text-tasks;
+          font-size: 11px;
+          line-height: @para-desc;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+      .box-info {
+        width: 65%;
+        h3 {
+          font-size: @para-laptop;
+          font-weight: bolder;
+          margin-top: 5px;
+        }
+        p {
+          font-size: @para-mobile;
+          color: @color-text-tasks2;
+          width: 20.75em;
+          margin-top: -1em;
+        }
+      }
+      .box-change {
+        min-width: 60px;
+        img {
+          width: 1.1875em;
+          height: 1.1875em;
+          padding-left: 0.3125em;
+        }
+      }
+    }
+    .tomato__level {
+      width: 5.5em;
+      text-align: center;
+      position: relative;
+      .box-tomato:hover {
+        -webkit-mask: url(/images/success-notification.png) no-repeat
+          center;
+        mask: url(/images/success-notification.png) no-repeat center;
+        mask-repeat: no-repeat;
+        img {
+          height: 6.25em;
+          width: 100%;
+        }
+      }
+      .box-tomato {
+        -webkit-mask: url(/images/tomato-task.svg) no-repeat center;
+        mask: url(/images/tomato-task.svg) no-repeat center;
+        mask-repeat: no-repeat;
+        img {
+          height: 6.25em;
+          width: 100%;
+        }
+      }
+      p {
+        margin-top: 21px;
+        position: absolute;
+        font-size: 1.575em;
+        font-family: "PT Sans", sans-serif;
+        top: 30%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .tomato__level:hover {
+      .box-tomato {
+        -webkit-mask: url(/images/success-notification.png) no-repeat
+          center;
+        mask: url(/images/success-notification.png) no-repeat center;
+        mask-repeat: no-repeat;
+        img {
+          height: 6.25em;
+          width: 100%;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+.first__box {
+  .box-color(@amethyst,@tomato,@tomato);
+}
+
+.second__box {
+  .box-color(@terracotta,@boxes-orange-text,@yellow_orange);
+}
+
+.third__box {
+  .box-color(@selective_yellow,@boxes-orange-text,@yellow_orange);
+}
+
+.fourth__box {
+  .box-color(@malibu,@gorse,@moon_yellow);
+}
+
+.fifth__box {
+  .box-color(@dark_turquoise,@meadow,@meadow);
+}
+
+.sixth__box {
+  .box-color(@amethyst,@meadow, @meadow);
+}
+
+.main__global-list {
+  display: flex;
+  padding-bottom: @heading1-laptop;
+  .global {
+    padding-top: 5em;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+      font-size: @heading3-mobile;
+      font-weight: 700;
+      color: @navigarion-ref;
+      line-height: @heading3-mobile;
+      padding-right: 1em;
+    }
+    p:hover {
+      color: @hovered-nav;
+    }
+    img {
+      padding-left: 1em;
+    }
+  }
+  .global__menu {
+    visibility: hidden;
+    width: 50%;
+    padding-top: 5em;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    color: @navigarion-ref;
+    p {
+      font-size: @subtitle-laptop;
+      line-height: @heading3-mobile;
+      font-weight: 400;
+    }
+    span {
+      padding-left: 0.3125em;
+      padding-right: 0.3125em;
+    }
+  }
+}
+.move-task--text {
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #8da5b8;
+  padding-top: 1em;
+}
+.move-task--img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__global-list:hover {
+  fill: @hovered-nav;
+}
+
+.icon:hover {
+  fill: @hovered-nav;
+}
+
+.list .box .list__box .box-date .red-date {
+  color: #e74c3c;
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  span {
+    font-size: 15px;
+  }
+}
+.work-list,
+.education-list,
+.hobby-list,
+.sport-list,
+.other-list {
+  .ping_about {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1.5em;
+    margin-left: -0.75em;
+    svg {
+      padding-right: 0.75em;
+    }
+  }
+  .list {
+    box-shadow: -9px 1px 0px -1px @selective_yellow;
+    .box {
+      .list__box {
+        .box-change {
+          padding-right: 1em;
+        }
+      }
+    }
+    .first__box {
+      .second-box-color(@boxes-orange-text,@yellow_orange);
+    }
+    .second__box {
+      .second-box-color(@gorse,@gorse);
+    }
+  }
+}
+
+.education-list {
+  .list {
+    box-shadow: -9px 1px 0px -1px @malibu;
+    .first__box {
+      .education(@tomato);
+    }
+    .second__box {
+      .education(@meadow);
+    }
+  }
+}
+
+.hobby-list {
+  .list {
+    box-shadow: -9px 0px 0px -1px #b470d0;
+  }
+}
+
+.sport-list {
+  .list {
+    box-shadow: -9px 1px 0px -1px #e16c65;
+  }
+}
+
+.other-list {
+  .list {
+    box-shadow: -9px 1px 0px -1px #00d4d9;
+  }
+}
+.first-time-page {
+  padding-top: 210px;
+  .first-time-page__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.first-time-page__navigation {
+  .buttons-navigation {
+    padding-bottom: 1em;
+  }
+}
+.count {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  left: 55px;
+  background: #f75c4c;
+  color: white;
+}
+
+.deleteMode {
+  position: relative;
+}
+
+.notification-container {
+  padding: 0 24px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-tasks {
+  justify-content: space-between!important;
+  .lists-delete {
+    visibility: hidden;
+  }
+  .lists-delete a:first-child {
+    padding-left: 0;
+  }
+}
+.allDataGlobal {
+  visibility: hidden;
+}

@@ -1,0 +1,204 @@
+@import url(../../../assets/less/main.less);
+
+.pomodoros-settings {
+  padding-top: 1em;
+  .header-pomodoros {
+    text-align: center;
+    font-size: @heading1-desc;
+    line-height: @heading1-laptop;
+    letter-spacing: 0.5.3125em;
+    color: @navigarion-ref;
+    padding-bottom: 0.5em;
+  }
+}
+
+.points-work__first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .text-ponts-info {
+    width: 120px;
+    font-size: @para-desc;
+    line-height: @para-desc;
+    .text-points {
+      margin-left: -1.6em;
+    }
+  }
+  .text-ponts-info::before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    width: @para-desc;
+    height: @para-desc;
+    margin-left: -50px;
+    margin-top: 0.95em;
+  }
+  .first-ponts-info::before {
+    background-color: @selective_yellow;
+  }
+  .second-ponts-info::before {
+    background-color: @dark_turquoise;
+  }
+  .third-ponts-info::before {
+    background-color: @malibu;
+  }
+  .fourth-ponts-info::before {
+    background-color: @amethyst;
+  }
+  .tab-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    border-bottom: 1px solid @navigarion-ref;
+    span {
+      font-size: 30px;
+      color: @navigarion-ref;
+    }
+    span:hover {
+      color: @hovered-nav;
+    }
+    p {
+      input {
+        text-align: center;
+        background-color: @background-color;
+        border: none;
+        color: @navigarion-ref;
+        font-size: @para-desc;
+        width: 12.75em;
+      }
+    }
+  }
+}
+
+.points-work__second {
+  text-align: center;
+  p {
+    font-size: @para-desc;
+    line-height: @para-desc;
+    font-weight: 400;
+    color: @navigarion-ref;
+    span {
+      color: @white;
+    }
+  }
+}
+
+.your-cycle {
+  padding-top: 1em;
+  .cycle-header {
+    font-size: @heading1-desc;
+    line-height: @heading1-desc;
+    text-align: center;
+  }
+  .cycle-img {
+    width: 100%;
+  }
+}
+
+.buttons-navigation {
+  padding-top: 102px;
+  padding-bottom: 3em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  button {
+    width: 49%;
+    font-size: @heading3-mobile;
+    line-height: @heading3-mobile;
+    font-weight: 700;
+    color: @white;
+    border: none;
+  }
+  .go-tasks-button {
+    height: 3.8em;
+    background-color: @malibu;
+  }
+  .go-tasks-button:hover {
+    background-color: @curious_blue;
+  }
+  .save-tasks-button {
+    height: 3.8em;
+    background-color: @meadow;
+  }
+  .save-tasks-button:hover {
+    background-color: @meadow-dark;
+  }
+}
+
+.button-navigation {
+  padding-top: 8em;
+  padding-bottom: 3em;
+  width: 100%;
+  button {
+    width: 100%;
+    height: 3.8em;
+    font-size: @heading3-mobile;
+    line-height: @heading3-mobile;
+    font-weight: 700;
+    color: @white;
+    border: none;
+  }
+  .go-tasks-button {
+    background-color: @malibu;
+  }
+  .go-tasks-button:hover {
+    background-color: @curious_blue;
+  }
+}
+
+.pomodoros-categories {
+  padding-top: 1em;
+  .header-pomodoros {
+    text-align: center;
+    font-size: @heading1-desc;
+    line-height: @heading1-laptop;
+    letter-spacing: 0.5.3125em;
+    color: @navigarion-ref;
+    padding-bottom: 0.5em;
+  }
+  .pomodoros-categories__points {
+    .points-work {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .text-ponts-info {
+        font-size: @heading3-laptop;
+        line-height: @heading3-mobile;
+        width: 60%;
+        font-weight: 400;
+        color: @navigarion-ref;
+        border-bottom: 1px solid #425869;
+      }
+      .text-ponts-info::before {
+        position: absolute;
+        content: "";
+        border-radius: 50%;
+        width: @para-desc;
+        height: @para-desc;
+        margin-left: -50px;
+        margin-top: 0.95em;
+      }
+      .first-ponts-info::before {
+        background-color: @selective_yellow;
+      }
+      .second-ponts-info::before {
+        background-color: @malibu;
+      }
+      .third-ponts-info::before {
+        background-color: @amethyst;
+      }
+      .fourth-ponts-info::before {
+        background-color: @terracotta;
+      }
+      .fifth-ponts-info::before {
+        background-color: @dark_turquoise;
+      }
+    }
+  }
+}
+
+.tab-add-down,
+.tab-add-up {
+  cursor: pointer;
+}

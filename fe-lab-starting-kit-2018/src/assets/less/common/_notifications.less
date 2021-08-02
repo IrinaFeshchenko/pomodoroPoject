@@ -1,0 +1,45 @@
+.notification-block {
+  display: flex;
+  margin-bottom: @heading1-laptop;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.3125em;
+  height: 4.5em;
+  .notification-info-image {
+    width: 15%;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .notification-info-text {
+    width: 70%;
+    p {
+      padding-left: 1em;
+    }
+  }
+  .notification-info-cancel {
+    width: 15%;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.notification-info {
+  .notification-types(@malibu,@curious_blue,@curious_blue);
+}
+
+.notification-error {
+  .notification-types(@tomato,@dark_coral,@dark_coral);
+}
+
+.notification-success {
+  .notification-types(@meadow,@meadow,@meadow);
+}
+.notification-warning {
+  .notification-types(@yellow_orange,@carrot_orange,@carrot_orange);
+}
